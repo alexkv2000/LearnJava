@@ -1,6 +1,7 @@
 package CressZero;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -53,7 +54,7 @@ public class CressZeroTest {
 
             if (template.isWin('X')) {
                 template.showTemplate();
-                System.out.println("YOU WIN! ");
+                System.out.println(template.user().toUpperCase(Locale.ROOT) + " WIN! ");
                 break;
             } else if (template.isWin('O')) {
                 System.out.println("COMPUTER WIN! ");
